@@ -11,8 +11,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml"); //here we created the container and gave the location of xml
-        First f = (First) context.getBean("first");//first is a id metioned in xml and it is typecasted
-        f.run();
+        ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml"); //here we created the container and gave the location of xml [and object created on this line]
+        //First f = (First) context.getBean("first");//first is a id metioned in xml and it is typecasted
+        //f.run();
     }
 }
