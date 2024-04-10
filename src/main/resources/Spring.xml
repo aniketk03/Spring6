@@ -3,6 +3,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="first" class = "org.example.First" scope = "prototype"> </bean>
+<bean id="first" class = "org.example.First">
+<property name ="age" value ="50"> </property>
+</bean>
 
 </beans>
