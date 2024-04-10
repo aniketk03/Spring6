@@ -1,12 +1,11 @@
 package org.example;
 
 public class First {
-    public First()
-    {
-        System.out.println("Calling");
-    }
+
+    int a;
+
     public void run()
     {
-        System.out.println("Running");
+        System.out.println("a");
     }
 }
