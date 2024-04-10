@@ -18,6 +18,6 @@ public class App
 
         First f1 = (First) context.getBean("first");//first is a id metioned in xml and it is typecasted
         System.out.println(f1.a);
-        //here the default scope is singletone bydefault a value should be 0 but due  to scope it refer to one object
+        //here the  Protoype scope is used now every time new object will be created
     }
 }
