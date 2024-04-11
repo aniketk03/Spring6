@@ -22,9 +22,9 @@
 
     </bean>
 
-<!--        <bean id="lap" class="org.example.Laptop">-->
+        <bean id="lap" class="org.example.Laptop" primary="true">
 
-<!--       </bean>-->
+       </bean>
     <bean id="com" class="org.example.Desktop">
 
     </bean>
