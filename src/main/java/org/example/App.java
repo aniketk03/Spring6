@@ -13,7 +13,6 @@ public class App
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
         First f = (First) context.getBean("first");
-        //f.setAge(10);
-        System.out.println(f.getAge());
+        f.run();
     }
 }

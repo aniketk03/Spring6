@@ -4,7 +4,22 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 <bean id="first" class = "org.example.First">
-<property name ="age" value ="50"> </property>
-</bean>
+<!--<property name ="age" value ="50"> </property>-->
+<!--    <property name ="lap" ref ="lap1"> </property>-->
 
-</beans>
+<!--    <constructor-arg type = "int" value = "10"> </constructor-arg> When we have to different values-->
+<!--    <constructor-arg type = "org.example.Laptop" ref="lap1"> </constructor-arg>When we have to different values-->
+
+<!--    <constructor-arg name = "age" value = "10"> </constructor-arg>-->
+<!--    <constructor-arg name = "lap" ref="lap1"> </constructor-arg>-->
+<!--    <constructor-arg name = "a" value = "20"> </constructor-arg> here we have 2 int so thats why used name one more solution is below-->
+
+    <constructor-arg index = "0" value = "10"> </constructor-arg>
+    <constructor-arg index = "1" ref="lap1"> </constructor-arg>
+    <constructor-arg index = "2" value = "20"> </constructor-arg>
+
+    </bean>
+
+        <bean id="lap1" class="org.example.Laptop">
+        </bean>
+    </beans>
