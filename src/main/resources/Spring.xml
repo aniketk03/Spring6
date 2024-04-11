@@ -25,7 +25,7 @@
         <bean id="lap" class="org.example.Laptop" primary="true">
 
        </bean>
-    <bean id="com" class="org.example.Desktop">
+    <bean id="com" class="org.example.Desktop" lazy-init="true">
 
     </bean>
     </beans>
