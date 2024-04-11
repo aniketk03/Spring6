@@ -5,6 +5,7 @@ public class First {
     private int age;
     private Laptop lap;
     private int a;
+    private Computer com;
 
     public First(int age, Laptop lap, int a)
     {
@@ -31,9 +32,20 @@ public class First {
             return lap;
         }
 
+        public Computer getcom()
+        {
+         return com;
+        }
+
+        public void setcom(Computer com)
+        {
+            this.com = com;
+        }
 
     public void run()
     {
-        lap.play();
+        //lap.play();
+        com.play();
+
     }
 }
