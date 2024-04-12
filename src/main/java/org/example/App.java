@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
-        First f = context.getBean(First.class);//GETBEANVYTYPE
+        First f = context.getBean(First.class);//GETBEANBYTYPE
         f.run();
     }
 }

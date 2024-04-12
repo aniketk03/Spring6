@@ -5,7 +5,10 @@
 
 <bean id="first" class = "org.example.First" autowire="byType">
 <!--<property name ="age" value ="50"> </property>-->
-<!--    <property name ="lap" ref ="lap1"> </property>-->
+<property name ="com">
+    <bean id="lap" class="org.example.Laptop" >
+    </bean>
+</property>
 
 <!--    <constructor-arg type = "int" value = "10"> </constructor-arg> When we have to different values-->
 <!--    <constructor-arg type = "org.example.Laptop" ref="lap1"> </constructor-arg>When we have to different values-->
@@ -22,10 +25,10 @@
 
     </bean>
 
-        <bean id="lap" class="org.example.Laptop" primary="true">
+<!--        <bean id="lap" class="org.example.Laptop" primary="true">-->
 
-       </bean>
-    <bean id="com" class="org.example.Desktop" lazy-init="true">
+<!--       </bean>-->
+<!--    <bean id="com" class="org.example.Desktop" lazy-init="true">-->
 
-    </bean>
+<!--    </bean>-->
     </beans>
