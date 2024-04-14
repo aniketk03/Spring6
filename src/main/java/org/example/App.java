@@ -14,11 +14,14 @@ public class App
     {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt = context.getBean("rp",Desktop.class);
-        dt.play();
-
-        Desktop dt1 = context.getBean("rp",Desktop.class);
-        dt1.play();
+        First f = context.getBean(First.class);
+        f.run();
+        System.out.println(f.getAge());
+//        Desktop dt = context.getBean("rp",Desktop.class);
+//        dt.play();
+//
+//        Desktop dt1 = context.getBean("rp",Desktop.class);
+//        dt1.play();
 
 
 

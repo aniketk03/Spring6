@@ -14,13 +14,13 @@ public class First {
 //        System.out.println(a);
 //        System.out.println("Hello");
 //    }
-//    public void setAge(int age) {
-//        this.age = age;
-//    }
-//
-//    public int getAge() {
-//        return age;
-//    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
 //    public void setlap(Laptop lap)
 //
 //        {
