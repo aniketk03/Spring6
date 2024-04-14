@@ -17,6 +17,9 @@ public class App
         Desktop dt = context.getBean("rp",Desktop.class);
         dt.play();
 
+        Desktop dt1 = context.getBean("rp",Desktop.class);
+        dt1.play();
+
 
 
 //        ApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
