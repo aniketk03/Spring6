@@ -2,6 +2,7 @@ package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,11 +14,13 @@ public class First {
     {
         System.out.println("First Constructor");
     }
+
+   @Value("10")
     private int age;
     private Laptop lap;
     private int a;
-    @Autowired
 
+    //@Autowired
     private Computer com;
 
 //    public First(int age, Laptop lap, int a)
@@ -58,7 +61,7 @@ public class First {
     public void run()
     {
         //lap.play();
-        com.play();
+        //com.play();
 
     }
 }
