@@ -17,7 +17,7 @@ public class First {
     private Laptop lap;
     private int a;
     @Autowired
-    @Qualifier("laptop")
+
     private Computer com;
 
 //    public First(int age, Laptop lap, int a)
