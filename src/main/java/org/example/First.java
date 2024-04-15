@@ -1,10 +1,23 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class First {
 
+
+
+    public First()
+    {
+        System.out.println("First Constructor");
+    }
     private int age;
     private Laptop lap;
     private int a;
+    @Autowired
+    @Qualifier("laptop")
     private Computer com;
 
 //    public First(int age, Laptop lap, int a)
